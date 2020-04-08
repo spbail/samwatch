@@ -1,0 +1,4 @@
+<fonts>
+	<font id="customFont" filename="custom1.fnt" filter="0123456789:"/>
+	<font id="icoFont" filename="icofont.fnt" filter="abcde"/>
+</fonts>
