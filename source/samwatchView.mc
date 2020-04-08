@@ -65,9 +65,9 @@ class samwatchView extends WatchUi.WatchFace {
         var view = View.findDrawableById("TimeDisplay");
         view.setText(timeString);
         
-        var secondsString = Lang.format("$1$", [clockTime.sec.format("%02d")]); 
-        view = View.findDrawableById("SecondsDisplay");
-        view.setText(secondsString);
+//        var secondsString = Lang.format("$1$", [clockTime.sec.format("%02d")]); 
+//        view = View.findDrawableById("SecondsDisplay");
+//        view.setText(secondsString);
     }
     
  	private function setDateDisplay() {
