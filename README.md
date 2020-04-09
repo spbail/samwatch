@@ -1,7 +1,13 @@
 # samwatch - Garmin watch app
 
+**How to install**
+* Plug in the watch via USB, it'll be mounted as `GARMIN`
+* Drag the PRG file into `/GARMIN/Garmin/Apps`
+* Unmount, go to the regular "Watch Faces" menu on the watch and select this one, see screenshot:
 
-How I got started:
+![watch](https://github.com/spbail/samwatch/blob/master/watch.png)
+
+**How I got started**
 * https://medium.com/@JoshuaTheMiller/making-a-watchface-for-garmin-devices-8c3ce28cae08
 * https://github.com/JoshuaTheMiller/Multivision-Watch/blob/master/Source/source/PluralsightTributeView.mc
 
