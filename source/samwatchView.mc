@@ -32,12 +32,13 @@ class samwatchView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
+		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
     	setClockDisplay();
   		setDateDisplay();
   
   		setHeartrateDisplay();
 		setStepcountDisplay();
-		setBatteryDisplay();
+		setBatteryDisplay(dc);
 		
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
@@ -64,10 +65,6 @@ class samwatchView extends WatchUi.WatchFace {
         var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
         var view = View.findDrawableById("TimeDisplay");
         view.setText(timeString);
-        
-//        var secondsString = Lang.format("$1$", [clockTime.sec.format("%02d")]); 
-//        view = View.findDrawableById("SecondsDisplay");
-//        view.setText(secondsString);
     }
     
  	private function setDateDisplay() {
@@ -92,21 +89,21 @@ class samwatchView extends WatchUi.WatchFace {
     	var stepcountDisplay = View.findDrawableById("StepcountDisplay");   
 		var steps = ActivityMonitor.getInfo().steps;		
 		if (steps!=null) {   
-			stepcountDisplay.setText(steps.format("%d"));
+//			stepcountDisplay.setText(steps.format("%d"));
 		}
     }
     
- 	private function setBatteryDisplay() {  	
+ 	private function setBatteryDisplay(dc) {  	
     	var battery = System.getSystemStats().battery;				
 		var batteryDisplay = View.findDrawableById("BatteryDisplay");      
 		batteryDisplay.setText(battery.format("%d")+"%");	
 		batteryInt = battery;
 
-//		Change the icon based on battery %
+		// Change the icon based on battery %
 		var batteryIcon = View.findDrawableById("BatteryIcon");
-		if (battery>75) {batteryIcon.setText("d");}
-		if (battery<=75) {batteryIcon.setText("c");}
-		if (battery<=50) {batteryIcon.setText("b");}
-		if (battery<=25) {batteryIcon.setText("a");}
+		if (battery>75) {batteryIcon.setText("d"); dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_BLACK);}
+		if (battery<=75) {batteryIcon.setText("c"); dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_BLACK);}
+		if (battery<=50) {batteryIcon.setText("b"); dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_BLACK);}
+		if (battery<=25) {batteryIcon.setText("a"); dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);}
     }
 }
