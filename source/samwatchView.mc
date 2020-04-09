@@ -5,6 +5,7 @@ using Toybox.Lang;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.Activity;
+using Toybox.ActivityMonitor;
 
 
 class samwatchView extends WatchUi.WatchFace {
@@ -36,7 +37,8 @@ class samwatchView extends WatchUi.WatchFace {
     	setClockDisplay();
   		setDateDisplay();
   
-  		setHeartrateDisplay();
+//  		setHeartrateDisplay();
+		setCaloriesDisplay();
 		setStepcountDisplay();
 		setBatteryDisplay(dc);
 		
@@ -74,14 +76,18 @@ class samwatchView extends WatchUi.WatchFace {
         view.setText(dateString);
     }
     
+	// Currently not used, not quite clear how the FR45 handles this
  	private function setHeartrateDisplay() {  	
-		var heartrateDisplay = View.findDrawableById("HeartrateDisplay");    
-		var hr = Activity.getActivityInfo().currentHeartRate;
-		if (hr!=null) {
-			heartrateDisplay.setText(hr.format("%d"));
-		}
-		else {
+		var heartrateDisplay = View.findDrawableById("HeartrateDisplay");
+
+		var heartrateIterator = ActivityMonitor.getHeartRateHistory(null, false);
+		var currentHeartrate = heartrateIterator.next().heartRate;
+		
+		if(currentHeartrate == ActivityMonitor.INVALID_HR_SAMPLE) {
 			heartrateDisplay.setText("---");
+		}		
+		else {
+			heartrateDisplay.setText(currentHeartrate.format("%d"));
 		}
     }
 
@@ -89,10 +95,18 @@ class samwatchView extends WatchUi.WatchFace {
     	var stepcountDisplay = View.findDrawableById("StepcountDisplay");   
 		var steps = ActivityMonitor.getInfo().steps;		
 		if (steps!=null) {   
-//			stepcountDisplay.setText(steps.format("%d"));
+			stepcountDisplay.setText(steps.format("%d"));
 		}
     }
     
+  	private function setCaloriesDisplay() {
+    	var caloriesDisplay = View.findDrawableById("CaloriesDisplay");   
+		var calories = ActivityMonitor.getInfo().calories;		
+		if (calories!=null) {   
+			caloriesDisplay.setText(calories.format("%d"));
+		}
+    }
+       
  	private function setBatteryDisplay(dc) {  	
     	var battery = System.getSystemStats().battery;				
 		var batteryDisplay = View.findDrawableById("BatteryDisplay");      
@@ -101,9 +115,9 @@ class samwatchView extends WatchUi.WatchFace {
 
 		// Change the icon based on battery %
 		var batteryIcon = View.findDrawableById("BatteryIcon");
-		if (battery>75) {batteryIcon.setText("d"); dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_BLACK);}
-		if (battery<=75) {batteryIcon.setText("c"); dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_BLACK);}
-		if (battery<=50) {batteryIcon.setText("b"); dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_BLACK);}
-		if (battery<=25) {batteryIcon.setText("a"); dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);}
+		if (battery>75) {batteryIcon.setText("d");}
+		if (battery<=75) {batteryIcon.setText("c");}
+		if (battery<=50) {batteryIcon.setText("b");}
+		if (battery<=25) {batteryIcon.setText("a");}
     }
 }
