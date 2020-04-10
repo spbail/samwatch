@@ -9,13 +9,13 @@
     <label id="HeartrateDisplay" text="000" x="53" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
 -->
  
-	<label id="CaloriesIcon" text="c" x="51" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_RED" />
-    <label id="CaloriesDisplay" text="0000" x="53" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+	<label id="CaloriesIcon" text="c" x="45" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_RED" />
+    <label id="CaloriesDisplay" text="0000" x="47" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     
-    <label id="StepcountIcon" text="s" x="132" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_BLUE" />
-    <label id="StepcountDisplay" text="00000" x="136" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="StepcountIcon" text="s" x="124" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_BLUE" />
+    <label id="StepcountDisplay" text="00000" x="127" y="35" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     
-    <label id="BatteryDisplay" text="00" x="103" y="172" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_WHITE" />
-    <label id="BatteryIcon" text="d" x="107" y="172" font="@Fonts.icoFont" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_DK_GREEN" />
+    <label id="BatteryIcon" text="b" x="97" y="172" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_RIGHT" color="Graphics.COLOR_DK_GREEN" />
+    <label id="BatteryDisplay" text="00%" x="101" y="172" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
 
 </layout>

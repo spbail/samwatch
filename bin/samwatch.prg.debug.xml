@@ -19,29 +19,28 @@
 <entry filename="/Users/sam/code/samwatch/source/samwatchView.mc" id="7" lineNum="52" pc="268435735" symbol="onHide"/>
 <entry filename="/Users/sam/code/samwatch/source/samwatchView.mc" id="8" lineNum="56" pc="268435740" symbol="onExitSleep"/>
 <entry filename="/Users/sam/code/samwatch/source/samwatchView.mc" id="9" lineNum="60" pc="268435745" symbol="onEnterSleep"/>
-<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="17" lineNum="5" pc="268436605" symbol="initialize"/>
-<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="17" lineNum="6" pc="268436609" symbol="initialize"/>
-<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="18" lineNum="10" pc="268436628" symbol="onStart"/>
-<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="19" lineNum="14" pc="268436633" symbol="onStop"/>
-<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="20" lineNum="18" pc="268436638" symbol="getInitialView"/>
-<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="20" lineNum="19" pc="268436642" symbol="getInitialView"/>
-<entry filename="Rez" id="27" lineNum="22" pc="268436680" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="24" pc="268436692" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="25" pc="268436729" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="28" pc="268436766" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="29" pc="268436919" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="30" pc="268436934" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="31" pc="268436986" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="32" pc="268437032" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="33" pc="268437201" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="34" pc="268437234" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="35" pc="268437286" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="36" pc="268437440" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="37" pc="268437594" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="38" pc="268437748" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="39" pc="268437902" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="40" pc="268438056" symbol="WatchFace"/>
-<entry filename="Rez" id="27" lineNum="43" pc="268438192" symbol="WatchFace"/>
+<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="17" lineNum="5" pc="268436457" symbol="initialize"/>
+<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="17" lineNum="6" pc="268436461" symbol="initialize"/>
+<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="18" lineNum="10" pc="268436480" symbol="onStart"/>
+<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="19" lineNum="14" pc="268436485" symbol="onStop"/>
+<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="20" lineNum="18" pc="268436490" symbol="getInitialView"/>
+<entry filename="/Users/sam/code/samwatch/source/samwatchApp.mc" id="20" lineNum="19" pc="268436494" symbol="getInitialView"/>
+<entry filename="Rez" id="27" lineNum="22" pc="268436532" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="24" pc="268436544" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="27" pc="268436581" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="28" pc="268436734" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="29" pc="268436749" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="30" pc="268436801" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="31" pc="268436847" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="32" pc="268437016" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="33" pc="268437049" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="34" pc="268437101" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="35" pc="268437255" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="36" pc="268437409" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="37" pc="268437563" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="38" pc="268437717" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="39" pc="268437871" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="42" pc="268438025" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388644" module="true" symbol="System"/>
@@ -110,25 +109,23 @@
 <entry endPc="268436270" name="stepcountDisplay" stackId="1" startPc="268436185"/>
 <entry endPc="268436360" name="caloriesDisplay" stackId="1" startPc="268436275"/>
 <entry endPc="268436360" name="calories" stackId="2" startPc="268436275"/>
-<entry endPc="268436604" name="battery" stackId="2" startPc="268436365"/>
-<entry endPc="268436604" name="batteryIcon" stackId="4" startPc="268436365"/>
-<entry endPc="268436604" name="batteryDisplay" stackId="3" startPc="268436365"/>
-<entry endPc="268436605" name="dc" stackId="1" startPc="268436361"/>
-<entry endPc="268436633" name="state" stackId="1" startPc="268436628"/>
-<entry endPc="268436638" name="state" stackId="1" startPc="268436633"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_CaloriesDisplay" stackId="9" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_CaloriesIcon" stackId="8" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_TimeDisplay_fontHeight" stackId="5" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_BatteryDisplay" stackId="12" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_StepcountDisplay" stackId="11" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_BatteryIcon" stackId="13" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_StepcountIcon" stackId="10" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_DateDisplay" stackId="6" startPc="268436692"/>
-<entry endPc="268438279" name="local_Rez_Fonts_icoFont" stackId="2" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_DateDisplay_fontHeight" stackId="7" startPc="268436692"/>
-<entry endPc="268438279" name="rez_cmp_local_bitmap_TimeDisplay" stackId="4" startPc="268436692"/>
-<entry endPc="268438279" name="local_Rez_Fonts_customFont" stackId="3" startPc="268436692"/>
-<entry endPc="268438280" name="dc" stackId="1" startPc="268436680"/>
+<entry endPc="268436456" name="battery" stackId="2" startPc="268436365"/>
+<entry endPc="268436456" name="batteryDisplay" stackId="3" startPc="268436365"/>
+<entry endPc="268436457" name="dc" stackId="1" startPc="268436361"/>
+<entry endPc="268436485" name="state" stackId="1" startPc="268436480"/>
+<entry endPc="268436490" name="state" stackId="1" startPc="268436485"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_CaloriesDisplay" stackId="8" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_CaloriesIcon" stackId="7" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_TimeDisplay_fontHeight" stackId="4" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_BatteryDisplay" stackId="12" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_StepcountDisplay" stackId="10" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_BatteryIcon" stackId="11" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_StepcountIcon" stackId="9" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_DateDisplay" stackId="5" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_DateDisplay_fontHeight" stackId="6" startPc="268436544"/>
+<entry endPc="268438112" name="rez_cmp_local_bitmap_TimeDisplay" stackId="3" startPc="268436544"/>
+<entry endPc="268438112" name="local_Rez_Fonts_customFont" stackId="2" startPc="268436544"/>
+<entry endPc="268438113" name="dc" stackId="1" startPc="268436532"/>
 </localVars>
 <annotations/>
 <functions>

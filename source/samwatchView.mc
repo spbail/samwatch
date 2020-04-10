@@ -114,10 +114,10 @@ class samwatchView extends WatchUi.WatchFace {
 		batteryInt = battery;
 
 		// Change the icon based on battery %
-		var batteryIcon = View.findDrawableById("BatteryIcon");
-		if (battery>75) {batteryIcon.setText("d");}
-		if (battery<=75) {batteryIcon.setText("c");}
-		if (battery<=50) {batteryIcon.setText("b");}
-		if (battery<=25) {batteryIcon.setText("a");}
+//		var batteryIcon = View.findDrawableById("BatteryIcon");
+//		if (battery>75) {batteryIcon.setText("d");}
+//		if (battery<=75) {batteryIcon.setText("c");}
+//		if (battery<=50) {batteryIcon.setText("b");}
+//		if (battery<=25) {batteryIcon.setText("a");}
     }
 }
